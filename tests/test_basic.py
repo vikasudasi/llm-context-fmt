@@ -49,3 +49,7 @@ def test_compare_formats_metrics_present():
     assert "format_sensitivity_score" in comparison
     assert "length_variance" in comparison
     assert "overlap_scores" in comparison
+    assert "min_overlap_scores" in comparison
+    assert comparison["overlap_scores"]["json_plain"] == 0.5
+    assert comparison["min_overlap_scores"]["json_plain"] == 1.0
+    assert comparison["format_sensitivity_score"] == 0.5
