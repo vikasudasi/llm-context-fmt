@@ -1,0 +1,2 @@
+[console_scripts]
+llm-context-fmt = llm_context_fmt.cli:main
